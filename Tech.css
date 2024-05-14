@@ -1,0 +1,263 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: lightgray;
+}
+
+/*navigation*/
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: skyblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 8vw;
+    z-index: 999;
+    height: 50px;
+    
+
+}
+nav img{
+    width: 150PX;
+    cursor: pointer;
+    border-radius: 700px;
+}
+
+nav .navigation{
+    display: flex;
+}
+
+nav .navigation ul {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+}
+
+nav .navigation ul li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+
+
+
+nav .navigation ul li a{
+    text-decoration: none;
+    color: blue;
+    font-size: 15px;
+    font-weight: 15px;
+    transition: 0.4s ease;
+}
+nav .navigation ul li a:hover {
+color: rebeccapurple;
+}
+/*home*/
+#home{
+    background-image: linear-gradient(rgba(4,4,4,0.5),rgba(3,3,3,0.5)), url("images/business-office-building-in-london-england.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#home h2{
+    color: white;
+    font-size: 30PX;
+}
+#home P{
+    color: white;
+    font-size: 20PX;
+}
+#home a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+#home .btn{
+    margin-top: 300PX;
+}
+#home a.blue{
+color: white;
+background-color:darkblue;
+transition: 0.4s ease; 
+}
+#home a.blue:hover{
+    color: darkblue;
+    background-color: white;
+ }
+ #home a.yellow{
+    color: white;
+    background-color:yellow;
+    transition: 0.4s ease;
+    }
+    #home a.yellow:hover{
+        color: darkblue;
+        background-color: white;
+     }
+  #course{
+    padding: 6vw 6vw 6vw 6vw;
+    text-align: center;
+    
+  }   
+  #course .courses{
+    text-align: start;
+    background-color: lightcyan;
+    height: 100%;
+    position: relative;
+    border-radius: 40px;
+  }
+#course .courses img{
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+
+}
+#course .courses:hover{
+    transform: scale(0.9);
+
+}
+
+
+
+#course .course-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 20px;
+}
+#course .courses .details{
+    padding: 15px 15px 0 15px;
+}
+#course .courses .cost{
+    background-color: blueviolet;
+    color: white;
+    line-height: 70px;
+    width: 70px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    bottom: 100px;
+
+}
+/*registration*/
+#registration{
+    padding: 8vw 8vw 8vw 8vw;
+    background-image: linear-gradient(rgba(84,94,114,0.5),rgba(112,82,112,0.5)), url("images/best-laptop-medium.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#registration .reminder{
+    color: beige;
+}
+
+#registration .reminder h1{
+    color: beige;
+}
+#registration .reminder .time{
+    display: flex;
+    margin-top: 40px;
+
+}
+#registration .reminder .time .date{
+    text-align: center;
+    padding: 15px 30px;
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 8px 32px 0 rgba(32,38,135,0.3);
+    border-radius: 10px;
+    margin: 0 5px 10px 5px;
+    border: 1px solid darkblue;
+    font-size: 1.1rem;
+    font-weight: 600;
+
+
+}
+
+#registration .form{
+    background: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    box-shadow: 0 8px 32px 0 rgba(32,38,135,0.3);
+}
+
+ #registration .form input {
+    margin: 10px 0;
+    padding: 12px 10px;
+    outline: none;
+}
+#registration .form .btn{
+    margin-top: 10px;
+}
+
+ #registration .form a.blue{
+    color: white;
+    background: blue;
+    transition: 0.3s ease;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 11px 35px;
+    border-radius: 5px;
+}
+
+#registration .form a.blue:hover{
+    color: blue;
+    background: white;
+}
+
+footer{
+    padding: 8vw;
+    background-color:darkslategray;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    
+}
+footer .footer-col{
+    padding-bottom: 20px;
+}
+footer h3{
+    color: aliceblue;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+footer li{
+    list-style: none;
+    color: gray;
+    padding: 10px 0;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+footer li:hover{
+    color: aliceblue;
+}
+
+
+
+
+
